@@ -1,23 +1,36 @@
 // get elements
 
 const pathLine = $(".path-line");
-const point = $(".path-scroll-point");
+const point = $(".scroll-point");
 
-let rotate = 0;
-let pathLineHeight = pathLine.height()
+// control element
+let pointTop = 0;
+let pointLeft = 0;
+let scrollHeight = 0;
 
+// logic
 $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
+    let scroll = $(window).scrollTop();
+    scrollHeight = scroll;
 
-    if ( scroll > pathLine.width()){
+    
+    if ( scroll > pathLine.height()){
+        
+        if ( scroll < 1550){
+            
+            return point.css({
+                "top": `${pointTop-=5}px`,
+                "left": `${pointLeft-=8}px`
+            });
 
-        pathLineHeight -= 80;
-
-        console.log(pathLineHeight);
-
+        }                             
         point.css({
-            // "height": `${pathLineHeight}`,
-            "transform": `rotate(${rotate++}deg)`
-        })
+            "top": `${pointTop+=5}px`,
+            "left": `${pointLeft+=8}px`
+        });
+
+        console.log(pointTop, pointLeft);
+
+
     };
 });
