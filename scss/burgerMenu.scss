@@ -1,0 +1,65 @@
+.menu-burger{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+
+    .line{
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+        border-radius: 3px;
+        transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) .5s;
+    }
+
+    .top{
+        top: 18%;
+    }
+    .middle{
+        top: 48%;
+    }
+    .bottom{
+        top: 78%;
+    }
+
+    .close {
+
+        .top{
+            transform: rotate(45deg);
+            top: 48%;
+        }
+
+        .middle, .bottom{
+            transform: rotate(-45deg);
+            top: 48%;
+        }
+    }
+
+    .icon.close .middle, .icon.close .bottom{
+        transform: rotate(-45deg);
+        top: 48%;
+    }
+}
+
+
+    .close .top {
+        transform: rotate(45deg);
+        top: 48%;
+    }
+
+    .close .middle, .close .bottom{
+        transform: rotate(-45deg);
+        top: 48%;
+
+    span{
+        display: flex;
+        margin: 8px;
+        width: 30px;
+        height: 1px;
+        background: #c3c3c3;
+        z-index: 999;
+    }
+}

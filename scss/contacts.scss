@@ -1,0 +1,251 @@
+.contacts{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+    // title
+
+    .contacts-cities{
+        width: 324px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 52px;
+            line-height: 60px;
+            color: #00A031;
+        }
+
+        .text{
+            margin: 20px 0;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #6C6C6C;
+        }
+
+
+        //  address
+
+        .cities-address{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            #losAngeles, #newYourk, #boston, #detroit{
+                width: 270px;
+                height: 128px;
+                background: none; 
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+
+            .city-item{
+                width: 270px;
+                height: 128px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+
+                .map-icon{
+                    font-family: Simple-Line-Icons-Pro;
+                    font-size: 24px;
+                    line-height: 24px;
+                    letter-spacing: 0.14359px;
+                    color: #BBBBBB;
+                    margin: 0 15px 0 0;
+                }
+
+                .city-info{
+
+                    .city-title{
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                        letter-spacing: 0.2px;
+                        color: #00A031;
+                    }
+
+                    .street-address{
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                        color: #6C6C6C;                    
+                    }
+                }
+            }
+
+            .current-city{
+                background: #FFFFFF;
+                box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0758039);
+
+                .map-icon{
+                    color: #00A031;
+                }
+            }
+        }
+    }
+
+    // .contacts-map{
+    //     width: 702px;
+    //     height: 756px;
+    //     position: relative;
+    // }
+
+    // city info
+    .contact-city-info{
+        width: 321px;
+        height: 496px;
+        background: #FFFFFF;
+        padding: 20px 40px;
+        box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0758039);
+        position: absolute;
+        top: 110px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+
+        .city-info{
+
+            &_title{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .city-name{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 38px;
+                    line-height: 51px;
+                    letter-spacing: 0.4px;
+                    color: #1C201E;
+                }
+
+                .street-info{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    color: #6C6C6C;
+                    margin: 10px 0;
+                }
+            }
+
+            @mixin titles {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+            }
+
+            @mixin content {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #999999;
+            }
+
+            &_schadule{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                i{
+                    margin: 0 10px 0 0;
+                    color: #00A031;
+                }
+                .schadule-title{
+                   @include titles();
+                   color: #222222;
+                }
+
+                .schadule_item{
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    color: #222222;
+
+                    span{
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                        color: #999999;
+                    }
+                }
+            }
+
+            &_phones{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            
+                .phones_title{
+                    i {
+                        font-size: 18px;
+                        margin: 0 10px 0 0;
+                        color: #00A031;
+                    }
+
+                    @include titles();
+                }
+
+                .phones-item {
+                   @include content();
+                }
+            }
+
+            &_mail{
+
+                i{
+                    margin: 0 10px 0 0;
+                    color: #00A031;  
+                }
+                .mail_title{
+                    @include titles();
+                }
+
+                .mail-item{
+                    @include content();
+                }
+            }
+        }
+    }
+}

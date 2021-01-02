@@ -1,0 +1,185 @@
+.contacts {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
+  .contacts .contacts-cities {
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .contacts .contacts-cities .title {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 60px;
+      color: #00A031; }
+    .contacts .contacts-cities .text {
+      margin: 20px 0;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #6C6C6C; }
+    .contacts .contacts-cities .cities-address {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .contacts .contacts-cities .cities-address #losAngeles, .contacts .contacts-cities .cities-address #newYourk, .contacts .contacts-cities .cities-address #boston, .contacts .contacts-cities .cities-address #detroit {
+        width: 270px;
+        height: 128px;
+        background: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10; }
+      .contacts .contacts-cities .cities-address .city-item {
+        width: 270px;
+        height: 128px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative; }
+        .contacts .contacts-cities .cities-address .city-item .map-icon {
+          font-family: Simple-Line-Icons-Pro;
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: 0.14359px;
+          color: #BBBBBB;
+          margin: 0 15px 0 0; }
+        .contacts .contacts-cities .cities-address .city-item .city-info .city-title {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+          color: #00A031; }
+        .contacts .contacts-cities .cities-address .city-item .city-info .street-address {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #6C6C6C; }
+      .contacts .contacts-cities .cities-address .current-city {
+        background: #FFFFFF;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0758039); }
+        .contacts .contacts-cities .cities-address .current-city .map-icon {
+          color: #00A031; }
+  .contacts .contact-city-info {
+    width: 321px;
+    height: 496px;
+    background: #FFFFFF;
+    padding: 20px 40px;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0758039);
+    position: absolute;
+    top: 110px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start; }
+    .contacts .contact-city-info .city-info_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .contacts .contact-city-info .city-info_title .city-name {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 51px;
+        letter-spacing: 0.4px;
+        color: #1C201E; }
+      .contacts .contact-city-info .city-info_title .street-info {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #6C6C6C;
+        margin: 10px 0; }
+    .contacts .contact-city-info .city-info_schadule {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .contacts .contact-city-info .city-info_schadule i {
+        margin: 0 10px 0 0;
+        color: #00A031; }
+      .contacts .contact-city-info .city-info_schadule .schadule-title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: #222222; }
+      .contacts .contact-city-info .city-info_schadule .schadule_item {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #222222; }
+        .contacts .contact-city-info .city-info_schadule .schadule_item span {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #999999; }
+    .contacts .contact-city-info .city-info_phones {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .contacts .contact-city-info .city-info_phones .phones_title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.2px; }
+        .contacts .contact-city-info .city-info_phones .phones_title i {
+          font-size: 18px;
+          margin: 0 10px 0 0;
+          color: #00A031; }
+      .contacts .contact-city-info .city-info_phones .phones-item {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #999999; }
+    .contacts .contact-city-info .city-info_mail i {
+      margin: 0 10px 0 0;
+      color: #00A031; }
+    .contacts .contact-city-info .city-info_mail .mail_title {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.2px; }
+    .contacts .contact-city-info .city-info_mail .mail-item {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #999999; }
+
+/*# sourceMappingURL=contacts.css.map */
