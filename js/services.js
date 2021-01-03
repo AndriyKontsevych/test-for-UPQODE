@@ -10,13 +10,10 @@ let scrollhandler = 0;
 // logic
 $(window).scroll(function () {
     let scroll = $(window).scrollTop();
-    
-    console.log(pathLine.position().bottom );
 
     if ( scroll > pathLine.position().top ){
 
         if ( scroll > scrollhandler ){
-            console.log(scroll > scrollhandler);
             
             point.css({
                 "offset-distance": `${pointMoving += .6}%`
